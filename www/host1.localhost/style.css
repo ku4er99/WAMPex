@@ -1,0 +1,32 @@
+H1 {
+	color: #000080;
+	font-size: 200%;
+	font-family: Arial, Verdana, sans-serif;
+}
+
+P {
+	padding-left: 14px;
+}
+/* устанавливаем для таблицы внешнюю границу серого цвета толщиной 3px */
+table {
+	max-width: 1500px;
+	max-height: 600px;
+	border-style: groove;
+	border-collapse: collapse;
+	table-layout: fixed;
+	border-color: #7B68EE;
+
+ }
+
+TD.zem {
+	width: 200px;
+}
+
+.table-box {
+		height: 200px;
+		overflow: scroll;
+}
+
+
+/* задаём для ячейки тела таблицы границу серого цвета толщиной 1px */
+

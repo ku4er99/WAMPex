@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<HTML>
+<head>
+<TITLE>Python форма</TITLE>
+<meta http-equiv="Content-Type" content="text/html" charset = utf-8>
+<style>
+	#footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #39b54a; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+	}
+	
+	#forma{
+    overflow: auto; /* Добавляем полосы прокрутки */
+    padding-left: 15px; /* Отступ от текста слева */
+    background: url(3.jpg) repeat-y #fc0;
+	}
+</style>
+</head>
+
+<BODY>
+<center>
+<H1><p style="font-size: 120%; font-family: monospace; color: #cd66cc">Анкета пользователя</p></H1>
+<HR>
+<FORM id="forma" method="POST" action="script.php">
+    <H3>Заполните форму  и нажмите кнопку</H3>
+    <P><TABLE>
+        <TR>
+            <TH align=right>Имя:
+            <TD> <input type=text name=Имя>
+        <TR> 
+            <TH align=right>Фамилия:
+            <TD> <input type=text name=Фамилия>
+        <TR>
+            <TH align=right>Отчество:
+            <TD> <input type=text name=Отчество>
+        <TR>
+            <TH align=right>Интересовались ли вы суперкомпьютерами ранее?
+            <TD><table>
+            <td><input type=radio name=Да.Нет value=Да>Да
+            <td><input type=radio name=Да.Нет value=Нет>Нет
+            </table>
+<TR>
+            <TH align=right>Должность:
+            <TD><select name=Должность>
+                <option>Студент
+                <option>Преподаватель
+                <option>Инженер
+                <option>Другое
+            </select>
+        <TR>
+            <TH align=right>Правильно укажите модель суперкомпьютера.
+            <TD><table>
+            <td><input type=checkbox name=ВариантОтвета value=ICS>Intel Compute Stick
+            <td><input type=checkbox name=ВариантОтвета value=GE200>GE-200
+            <td><input type=checkbox name=ВариантОтвета value=S390>S/390 (IBM)
+            <td><input type=checkbox name=ВариантОтвета value=STL>Sunway TaihuLight			
+            </table>
+        <TR>
+            <TH align=right>Оставьте отзыв о сайте:
+            <TD><textarea name=Комментарий cols=30 rows=2></textarea>
+		<TR>
+			<input type="hidden" name="IDСайта" value="2">
+        <TR>
+            <TD colspan=2 align=center>
+            <input type=submit value="ОТПРАВИТЬ">
+    </TABLE>
+</FORM>
+<HR>
+</center>
+<div id="footer">
+<center>
+<a href="home.html">Вернуться на главную</a><br>
+<a href="pon.html">Понятие суперкомпьютера</a><br>
+<a href="prim.html">Применение суперкомпьютера</a><br>
+<a href="task.html">Задача</a>
+</center>
+&copy; Кучеренко О. В.
+</div>
+</BODY></HTML>
+
